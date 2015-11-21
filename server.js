@@ -38,7 +38,7 @@ app.post('/transactions/:sid/:donation', function(req, res){
     var sid = req.params.sid;
     var donation = req.params.donation;
     connection.query("INSERT INTO transactions (sid, donation) VALUES"+   
-                 "   ("+sid+", "+donations+")", function(error){
+                 "   ("+sid+", "+donation+")", function(error){
         if(error){
               console.log("DB insertion failed: "+error);
               res.end("DB error");

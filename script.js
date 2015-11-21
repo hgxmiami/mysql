@@ -16,3 +16,7 @@ $.ajax({
     }
 });
 
+$("#btn-submit").on("click", function(){
+                    console.log("it's working")
+});
+
